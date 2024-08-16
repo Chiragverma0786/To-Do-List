@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+  }
+  
+ .container{
+    background-color: #ffffffde;
+    border-radius: 20px;
+    height: 70vh;
+    width: 30vw;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+    display: flex;
+ }
+
+ .input{
+    position: relative;
+    align-items: center;
+    height: 4vh;
+    width: 20vw;
+    border-radius: 15px;
+    background-color: #fff;
+ }
+
+ .input input{
+    height: 100%;
+    width: 70%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-right: 20px;
+    padding-left: 15px ;
+    font-size: 13px;
+    border: 1px;
+ }
+
+ .input button{
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  border: 0;
+  border-radius: 15px;
+  background-color: orangered;
+  color: #fff;
+  font-size: 10px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+ }
+
+ .input button:hover{
+  background-color: rgb(203, 54, 0);
+ }
+
+ input[type=text]:focus{
+  outline: 0px;
+  }
+
+
+  .task1 li{
+    position: relative;
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    padding-left: 40px;
+    font-size: 3vh;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: center;
+    height: 5vh;
+    transition: all ease-in-out 0.2s;
+    /* padding: 0 80px; */
+    gap: 8vh;
+  }
+
+  .task1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 80%;
+  }
+
+  .task1 li::before{
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background: url(images/unchecked.png);
+    background-size: cover;
+    position: center;
+    object-fit: cover;
+    left: 0;
+  }
+
+  .task1 li.checked{
+    background-color: orangered;
+    width: 100%;
+    color: #fff;
+  }
+
+  .task1 li.checked::before{
+    background: url(images/checked.png);
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+  }
+
+  .task1 span{
+    position: absolute;
+    /* top: 20px; */
+    right: 8px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 4vh;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .task1 span:hover{
+    background-color: #949494;
+    color: #fff;
+  }
+
+  .tasks{
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 2.5vh;
+  }
+
+  
